@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header class="blur-modal">
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="mode-shifter-flex">
+        <button class="dark-mode" type="button" name="dark-mode" style="margin: 1%;border-radius: 10%; width:40%; height:80%;background-color:black;color:white;border:solid 4px white;font-family: inherit;">Dark Mode</button>
+        <button class="light-mode" type="button" name="light-mode" style="margin: 1%;border-radius: 10%; width:40%; height:80%;background-color:white;color:black;font-family: inherit;">Light Mode</button>
+      </div>
+      <div class="number">?</div>
+    </header>
+    <main class="blur-modal">
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right" class="blur-modal">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <div class="rules">
+      <div class="modal-btn">
+        <button class="btn-modal" type="button" name="button" style="border-radius:10%;">? Rules ?</button>
+      </div>
+        <div class="modal hidden">
+          <h2 style="position:absolute; top:4%;left:40.9%;">? RULES ?</h2>
+          <p class="rule-text">1. There is a random number between 1 to 20 that you have to guessed.<br></br>
+          2. Your starting score will be 20 points which will get reduced by 1 point every time you give a wrong answer.<br></br>
+          3. The following messages will be printed for your references throughout the game:-<br></br>
+          --> 📈 Number high/📉 Number low : If the number you guessed is within 2 numbers exceding/preceding the number to be guessed.<br></br>
+          --> 📈 Number too high/📉 Number too low: If you are far from the number to be guessed.</p>
+          <div class="cross">
+            <button type="button" name="button" style="margin:0;background-color:white;height:100%;width:100%;border-radius:5%;">𒒬</button>
+          </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <div class="footer">
+      <p style="text-align:center;position:absolute;top:15%;left:38%;">A project made by Anirudh Prajapati</p>
+
+    </div>
+  </footer>
+</html>
